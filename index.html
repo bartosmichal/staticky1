@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michal Bartoš | IT Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="glass-bg"></div>
+
+    <main class="container">
+        <header class="profile-header">
+            <div class="avatar-container">
+                <img src="avatar.png" alt="Profile" id="profile-img">
+            </div>
+            <h1 id="name">Načítání...</h1>
+            <p class="subtitle">IT Student & Developer</p>
+        </header>
+
+        <section class="content-grid">
+            <div class="card skills-card">
+                <h2><span class="icon">🚀</span> Dovednosti</h2>
+                <ul id="skills"></ul>
+            </div>
+
+            <div class="card interests-card">
+                <h2><span class="icon">🎨</span> Zájmy</h2>
+                <div id="interests"></div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2><span class="icon">💻</span> Projekty</h2>
+            <div id="projects" class="projects-grid"></div>
+        </section>
+
+        <div id="error-message" class="error-container" style="display: none;">
+            <p>Omlouváme se, nepodařilo se načíst profilová data.</p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
